@@ -5,5 +5,5 @@ app = Flask(__name__)
 CORS(app)
 
 
-if app.app_context():
+if __name__=="__main":
     app.run(debug=True)
