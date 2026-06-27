@@ -18,6 +18,6 @@ class Config:
     
     JWT_SECRET_KEY= os.getenv("FLASK_JWT_SECRET_KEY")
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(
-        minutes=int(os.getenv("JWT_ACCESS_TOKEN_EXPIRES_MINUTES", "150"))
+        minutes=int(os.getenv("JWT_ACCESS_TOKEN_EXPIRES_MINUTES", "15000"))
     )
     

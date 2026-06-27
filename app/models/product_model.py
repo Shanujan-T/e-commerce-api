@@ -12,6 +12,7 @@ class Product(db.Model):
     price = db.Column(db.Decimal, nullable=False)
     stock = db.Column(db.Integer)
     image = db.Column(db.String)
+    is_active = db.Column(db.Boolean, default=True)
     
 
     
