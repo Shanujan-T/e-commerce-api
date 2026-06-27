@@ -1,6 +1,5 @@
 from app.extentions import db
-from app.utils import utc_now
-from werkzeug.security import generate_password_hash, check_password_hash
+
 
 
 class Product(db.Model):
