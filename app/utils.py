@@ -1,4 +1,5 @@
-from datetime import datetime
+from datetime import datetime, timezone
 
-def datetime():
-    return datetime
+
+def utc_now():
+    return datetime.now(timezone.utc)
