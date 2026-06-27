@@ -16,5 +16,17 @@ class Product(db.Model):
     is_active = db.Column(db.Boolean)
 
     
+    def to_dict(self):
+        """Return a dictionary representation of the user."""
+        return {
+            "id": self.id,
+            "seller_id": self.seller_id,
+            "name": self.name,
+            "description": self.description,
+            "price": self.price,
+            "stock": self.stock,
+            "image": self.image,
+            "is_active": self.is_active,
+        }
 
 
